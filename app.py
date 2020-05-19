@@ -18,7 +18,7 @@ def start():
 
                 if len(message) is not 0 and len(message) < 280:
                     if "mrk!" in message:
-                        message = message.replace("mrk!", "")
+                        message = message.replace("mrk!", "mrk!")
                         if len(message) is not 0:
                             if dms[i]['media'] is None:
                                 print("DM will be posted")
