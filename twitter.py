@@ -75,7 +75,13 @@ class Twitter:
             print(ex)
             time.sleep(40)
             pass
-
+    
+    def sukses(self, sender_id):
+        try:
+            self.send_direct_message(sender_id,text['Menfess kamu udah mimin kirim yaa'])
+        except Exception as e:
+            print(e)
+            pass
 
     def post_tweet(self, tweet):
         try:
